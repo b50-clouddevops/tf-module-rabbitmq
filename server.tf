@@ -8,7 +8,7 @@ resource "aws_spot_instance_request" "rabbitmq" {
   iam_instance_profile      = "b50-admin"
 
   tags = {
-    Name = "${var.COMPONENT}-${var.ENV}"
+    Name = "rabbitmq-${var.ENV}"
   }
 }
 
